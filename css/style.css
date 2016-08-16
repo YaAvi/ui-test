@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    display: flex;
+}
+.container {
+    position: absolute;
+    left: 180px;
+    bottom: 0;
+    right: 0px;
+    top: 0;
+}
+
+.header {
+    position: fixed;
+    left: 180px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #f0f1f4;
+    color: #121733;
+    background-color: white;
+    z-index: 10;
+}
+
+@media (max-width: 650px) {
+    .header {
+        flex-wrap: wrap;
+    }
+}
+
+
+.header div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu {
+    min-width: 23px;
+}
+.project {
+    color: white;
+    width: 100px;
+    background-color: #5184f5;
+    padding: 7px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    margin-right: 5px;
+}
+
+.project i {
+    padding-right: 5px;
+    padding-left: 3px;
+    font-size: 0.8em;
+    color: #7aa7fe;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.right {
+    width: 84%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sidebar {    
+    position: fixed;
+    width: 180px;
+    background-color: #0d1a34;
+    color: white;
+    height: 100%;
+}
+
+.sidebar .title{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    vertical-align: middle;
+    border-bottom: 1px solid #0b1832;
+}
+
+.sidebar .title i{
+    padding-left: 9%;
+    padding-right: 3%;
+    font-size: 1.5em;
+    color: #3e599f;
+}
+
+.sidebar li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    list-style: none;
+    border-bottom: 1px solid #07142d;
+}
+
+.sidebar li i{
+    padding-left: 12%;
+    padding-right: 3%;
+    color: #3e599f;
+}
+
+.sidebar li:hover {
+    background-color: #07142d;
+}
+
+.sidebar li:active {
+    background-color: #112143;
+}
+
+.sidebar .active {
+    background-color: #112143;
+    width: 97%;
+    border-left: 3px solid #5b80ff;
+}
+
+.content {
+    position: relative;
+    top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    background-color: #f3f4f7;
+    padding: 10px;
+}
+
+.welcome {    
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 2em;
+    height: 70px;
+    padding-left: 15px;
+}
+
+
+
+.half {    
+    margin: 1%;
+    background-color: white;
+    width: 48%;
+    height: 35%;
+}
+
+.third {
+    margin: 1%;
+    background-color: white;
+    width: 31.33%;
+    height: 35%;
+}
